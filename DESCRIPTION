@@ -1,0 +1,18 @@
+Package: MethylC
+Type: Package
+Title: Meanshift clustering of CpG sites 
+Version: 0.1.0
+Author: Minsun S. Jeon, Casey Pei
+Maintainer: minsunjeon@tamu.edu
+Description: Implements meanshift clustering on cfBS methylation data 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: data.table,
+         dplyr,
+         parallel,
+         Rcpp,
+         RcppArmadillo
+         
+
+         
