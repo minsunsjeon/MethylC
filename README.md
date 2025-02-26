@@ -29,5 +29,9 @@ Available functions:
 ---------
 |Code| Function |
 |:-|:-|
-|applyMeanshift|Applies the meanshift algorithm to the methylation dataset|
+|run_meanshift|The main function that runs the meanshift clustering algorithm on methylation data|
+|applyMeanshift|Runs the meanshift algorithm on a dataframe to identify islands based on the start position|
 |formatIslands|Takes the result of the meanshift algorithm and make it into a format that includes the list of islands and single sites|
+|computeplus|Helper function that computes the sum of a numeric column|
+|getstart|Returns the first element of a vector (start position of an island)|
+|getend|Returns the last element of a vector (end position of an island)|

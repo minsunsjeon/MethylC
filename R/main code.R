@@ -1,5 +1,5 @@
 ############################################################
-# CPGCluster #
+# MethylC #
 ############################################################
 
 # algorithm to be run on input csv file to combine islands by distance between position via the meanshift algorithm
@@ -19,7 +19,7 @@
 
 # OUTPUT
 #
-# file - meanshift_result.csv (file in directory)
+# final dataframe with meanshift clustering results
 # [Chromosome, Start Position, End Position, Sets, Sample 1_Methylated, Sample 1_Unmethylated, ...]
 # Sets is the number of sets combined into each row
 #
@@ -101,7 +101,7 @@ formatIslands <- function(x) {
 #'
 #' @param file Path to the CSV file containing data.
 #' @param stepsize Integer window size for clustering (default: 50).
-#' @return A data frame with meanshift clustering results.
+#' @return A dataframe with meanshift clustering results.
 #' @export
 run_meanshift <- function(file, stepsize = 50) {
   # Load C++ function
